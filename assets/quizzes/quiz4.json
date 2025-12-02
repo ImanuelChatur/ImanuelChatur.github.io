@@ -1,0 +1,664 @@
+{
+  "title": "Quiz 4: Final C++ Quiz",
+  "description": "A comprehensive quiz covering the Standard Template Library (STL), Exception Handling, Function and Class Templates, and Advanced Object-Oriented Programming (Inheritance and Polymorphism).",
+  "quiz": [
+    {
+      "id": 1,
+      "question": "A(n) __________ is like a pointer. It is used to access the individual data elements in a container.",
+      "options": [
+        "element access operator",
+        "subscript indicator",
+        "global data finder",
+        "iterator",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 2,
+      "question": "The most important data structures in the STL are __________",
+      "options": [
+        "arrays and structures",
+        "lists and groups",
+        "containers and iterators",
+        "templates and prototypes",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 3,
+      "question": "A(n) __________ is a class that stores data and organizes it in some fashion.",
+      "options": [
+        "iterator",
+        "container",
+        "template",
+        "box",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 4,
+      "question": "A sequence container that is dynamic in size is a(n)",
+      "options": [
+        "array",
+        "map",
+        "vector",
+        "multimap",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 5,
+      "question": "Which of the following types of iterators is(are) not supported by the vector class?",
+      "options": [
+        "const_iterator",
+        "reverse_iterator",
+        "const_reverse_iterator",
+        "All of these are supported by the vector class",
+        "None of these are supported by the vector class"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 6,
+      "question": "A technique introduced by C++11 to improve runtime performance is known as",
+      "options": [
+        "insertion",
+        "emplacement",
+        "push",
+        "multimove",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 7,
+      "question": "Because a vector container uses a dynamically allocated array to hold its elements, it is common for the vector class to allocate",
+      "options": [
+        "less memory than it needs",
+        "more memory than it needs",
+        "a separate memory location for copies of new elements",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 8,
+      "question": "To use the map class, you must include",
+      "options": [
+        "#include<key>",
+        "#include<key_value>",
+        "#include<map>",
+        "#include<multimap>",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 9,
+      "question": "When an element is stored in a map, it is stored as an object of the __________ type.",
+      "options": [
+        "map",
+        "key",
+        "pair",
+        "key_value",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 10,
+      "question": "To retrieve a value from a map, you call the __________ member function and pass the __________ that is associated with the desired value.",
+      "options": [
+        "at(), key",
+        "at(), value",
+        "key(), key",
+        "pair(), key",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is used to signal errors or unexpected results that happen as a program runs?",
+      "options": [
+        "virtual functions",
+        "destructors",
+        "exceptions",
+        "templates",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 12,
+      "question": "The __________ starts with the key word try and is followed by a block of code that executes any statement that might cause an exception to be thrown.",
+      "options": [
+        "try block",
+        "try/catch class",
+        "try function",
+        "catch function",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 13,
+      "question": "When an error occurs, an exception is",
+      "options": [
+        "created",
+        "thrown",
+        "passed",
+        "ignored",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 14,
+      "question": "An exception thrown from outside a try block will",
+      "options": [
+        "be caught outside the catch block",
+        "be caught inside the catch block",
+        "remain inside the throw block",
+        "cause the program to abort execution",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 15,
+      "question": "In the following code, which statement is the throw point?\ndouble divide(int numer, int denom)\n{\nif (denom == 0)\n\t\t throw \"ERROR: Cannot divide by zero.\\n\";\nelse\n\t\t return static_cast<double>(numer)/denom;\n}",
+      "options": [
+        "if (denom == 0)",
+        "throw \"ERROR: Cannot divide by zero.\\n\";",
+        "return static_cast<double>(numer)/denom;",
+        "There is no throw point because there is no try block.",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 16,
+      "question": "Given the following code, what will happen if the value of denom is 0?\ndouble divide(int numer, int denom)\n{\nif (denom == 0)\n\t\t throw \"ERROR: Cannot divide by zero.\\n\";\nelse\n\t\t return static_cast<double>(numer)/denom;\n}",
+      "options": [
+        "Nothing will happen because there is no catch block.",
+        "The program will display ERROR: Cannot divide by zero. and then move to the statement following the if/else block.",
+        "The program will display ERROR: Cannot divide by zero. and then halt.",
+        "There is no throw point because there is no try block.",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 17,
+      "question": "If an exception is thrown by a member function of a class object, the class __________ is called.",
+      "options": [
+        "constructor",
+        "destructor",
+        "catcher",
+        "handler",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 18,
+      "question": "In a function template, the programmer writes a general version of a function using __________ (like T), which are then replaced by specific __________ (like int, double, etc.) when the function is instantiated.",
+      "options": [
+        "data types, template parameters",
+        "template parameters, arguments",
+        "arguments, template parameters",
+        "template parameters, data types",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 19,
+      "question": "A(n) __________ is used in a function template to specify a generic data type.",
+      "options": [
+        "dummy variable",
+        "exception",
+        "catch block",
+        "type parameter",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 20,
+      "question": "The beginning of a function template is marked by a",
+      "options": [
+        "return type",
+        "parameter list",
+        "template prefix",
+        "semicolon",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 21,
+      "question": "What does the T represent in the following statement?\ntemplate < class T >",
+      "options": [
+        "the name of the function template",
+        "T stands for Template",
+        "a generic data type that is used in a function template",
+        "the int data type",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 22,
+      "question": "What does the word class indicate in the following statement?\ntemplate < class T >  //class is the same as typename here",
+      "options": [
+        "class is a key word that is used to precede the type parameter.",
+        "It indicates that a class is being derived from an existing class named T.",
+        "It indicates that a class named T is being derived from a class named template.",
+        "A class named T will automatically be created by the compiler.",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 23,
+      "question": "Class templates allow you to create one general version of a class without having to",
+      "options": [
+        "write any code",
+        "use member functions",
+        "use private members",
+        "duplicate code to handle multiple data types",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 24,
+      "question": "A(n) __________ is a value or an object that signals an error.",
+      "options": [
+        "destructor",
+        "template",
+        "throw",
+        "exception",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 25,
+      "question": "To handle an exception that has been thrown, a program must have a(n)",
+      "options": [
+        "throw function",
+        "try/catch construct",
+        "fatal error",
+        "unrecoverable error",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 26,
+      "question": "The try block is immediately followed by one or more",
+      "options": [
+        "errors",
+        "error messages",
+        "catch blocks",
+        "throw blocks",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 27,
+      "question": "Catch blocks serve as",
+      "options": [
+        "exception handlers",
+        "receivers",
+        "temporary variables",
+        "permanent storage for trapped errors",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 28,
+      "question": "A generic function that can work with any data type is a",
+      "options": [
+        "function argument",
+        "function parameter",
+        "function template",
+        "member function",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 29,
+      "question": "How much memory is reserved for a function template?",
+      "options": [
+        "four bytes",
+        "It depends on the size of the template.",
+        "two bytes",
+        "no memory",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 30,
+      "question": "A function template's prefix contains __________ enclosed in angle brackets.",
+      "options": [
+        "one or more generic data types",
+        "the function definition",
+        "constant values",
+        "the function's return type",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 31,
+      "question": "A function template prefix is placed before the function header while a class template prefix is placed",
+      "options": [
+        "following the public: access specification",
+        "following the private: access specification",
+        "before the class declaration",
+        "before the class constructor function header",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 32,
+      "question": "In OOP programming, __________ allows you to create new classes based on existing classes.",
+      "options": [
+        "polymorphism",
+        "inheritance",
+        "function overloading",
+        "the copy constructor",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 33,
+      "question": "When you derive a class from an existing class, you __________ add new data and functions.",
+      "options": [
+        "never",
+        "must",
+        "may",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 34,
+      "question": "The __________ members of a base class are never accessible to a derived class.",
+      "options": [
+        "private",
+        "public",
+        "protected",
+        "All of these",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 35,
+      "question": "The __________ constructor is called before the __________ constructor.",
+      "options": [
+        "base, derived",
+        "derived, base",
+        "public, private",
+        "private, public",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 36,
+      "question": "A __________ of a base class expects to be overridden in a derived class.",
+      "options": [
+        "constructor function",
+        "destructor function",
+        "static function",
+        "virtual function",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 37,
+      "question": "The term __________ means the ability to take many forms.",
+      "options": [
+        "inheritance",
+        "polymorphism",
+        "member function",
+        "encapsulation",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 38,
+      "question": "When the compiler binds a member function call with the version of the function that resides in the same class as the call itself, it is considered",
+      "options": [
+        "local binding",
+        "safe binding",
+        "static binding",
+        "dynamic binding",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 39,
+      "question": "The compiler performs __________ on virtual functions.",
+      "options": [
+        "local binding",
+        "additional error checking",
+        "static binding",
+        "dynamic binding",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 40,
+      "question": "Which is the base class in the following statement?\nclass Car : public Vehicle",
+      "options": [
+        "Car",
+        "Vehicle",
+        "public",
+        "class",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 41,
+      "question": "The following statement allows the __________ members of the Car class to access __________ members of the Vehicle class.\nclass Car : public Vehicle",
+      "options": [
+        "private, private",
+        "public, private",
+        "protected, private",
+        "all, protected",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 42,
+      "question": "Which is the derived class in the following statement?\nclass Car : protected Vehicle",
+      "options": [
+        "Car",
+        "Vehicle",
+        "protected",
+        "There is no way to tell.",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 43,
+      "question": "What is being protected in the following statement?\nclass Car : protected Vehicle",
+      "options": [
+        "derived class functions",
+        "base class members",
+        "derived class data",
+        "future inherited classes",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 44,
+      "question": "Arguments are passed to the base class by the __________ class __________ function.",
+      "options": [
+        "derived, constructor",
+        "derived, destructor",
+        "base, constructor",
+        "base, destructor",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 45,
+      "question": "Arguments are passed to the base class destructor by the __________ class __________ function.",
+      "options": [
+        "derived, constructor",
+        "derived, destructor",
+        "base, constructor",
+        "base, destructor",
+        "None of these"
+      ],
+      "answer_index": 4
+    },
+    {
+      "id": 46,
+      "question": "Protected members of a base class are like __________, but they may be accessed by derived classes.",
+      "options": [
+        "constructor functions",
+        "static members",
+        "private members",
+        "public members",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 47,
+      "question": "The __________ destructor is called before the __________ destructor.",
+      "options": [
+        "base, derived",
+        "derived, base",
+        "public, private",
+        "private, public",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 48,
+      "question": "Which of the following is commonly used to extend a class or to give it additional capabilities?",
+      "options": [
+        "inheritance",
+        "privacy",
+        "the constructor",
+        "the destructor",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 49,
+      "question": "When member functions behave differently depending on which object performed the call, this is an example of",
+      "options": [
+        "chaos theory",
+        "virtual insubordination",
+        "polymorphism",
+        "encapsulation",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 50,
+      "question": "A virtual function is a function that expects to be __________ in a derived class.",
+      "options": [
+        "ignored",
+        "called frequently",
+        "overridden",
+        "private",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 51,
+      "question": "Multiple inheritance is when a __________ class has __________ base classes.",
+      "options": [
+        "base, no",
+        "derived, two or more",
+        "derived, no",
+        "compound, more than two",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 52,
+      "question": "A virtual function is declared by placing the __________ key word in front of the return type in the base class's function declaration.",
+      "options": [
+        "virtual",
+        "private",
+        "public",
+        "protected",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 53,
+      "question": "Polymorphism is when __________ in a class hierarchy perform differently, depending on which object performs the call.",
+      "options": [
+        "base class constructors",
+        "derived class constructors",
+        "member functions",
+        "derived class destructors",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 54,
+      "question": "Functions that are dynamically bound by the compiler are __________ functions.",
+      "options": [
+        "constructor",
+        "destructor",
+        "static",
+        "virtual",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 55,
+      "question": "C++11 introduced the __________ key word to help prevent subtle errors when overriding virtual functions.",
+      "options": [
+        "const",
+        "final",
+        "override",
+        "virtual",
+        "None of these"
+      ],
+      "answer_index": 2
+    }
+  ]
+}
