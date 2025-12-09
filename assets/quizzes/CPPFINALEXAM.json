@@ -1,0 +1,1491 @@
+{
+  "title": "C++ Advanced Topics Quiz",
+  "description": "A comprehensive quiz covering C++ Object-Oriented Programming (OOP) concepts, Inheritance, Polymorphism, Exceptions, Templates, the Standard Template Library (STL), and Concurrency (Threads).",
+  "quiz": [
+    {
+      "id": 1,
+      "question": "Objects are created from abstract data types that encapsulate __________ and __________ together.",
+      "options": [
+        "numbers, characters",
+        "data, functions",
+        "addresses, pointers",
+        "integers, floating-point numbers",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 2,
+      "question": "In OOP terminology, an object's member variables are often called its __________ and its member functions can be referred to as its behaviors or its __________.",
+      "options": [
+        "values, morals",
+        "data, activities",
+        "attributes, activities",
+        "attributes, methods",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 3,
+      "question": "A C++ class is similar to a(n)",
+      "options": [
+        "inline function",
+        "header file",
+        "library function",
+        "structure",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 4,
+      "question": "Where are class declarations usually stored?",
+      "options": [
+        "on separate disk volumes",
+        "in their own header files",
+        "in .cpp files, along with function definitions",
+        "under pseudonyms",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 5,
+      "question": "In a procedural program you typically have __________ stored in a collection of variables and a set of __________ that perform operations on the data.",
+      "options": [
+        "numbers, arguments",
+        "parameters, arguments",
+        "strings, operators",
+        "data, functions",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 6,
+      "question": "A class is a(n) __________ that is defined by the programmer.",
+      "options": [
+        "data type",
+        "function",
+        "method",
+        "attribute",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 7,
+      "question": "Examples of access specifiers are the key words",
+      "options": [
+        "near and far",
+        "opened and closed",
+        "private and public",
+        "table and row",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is used to protect important data?",
+      "options": [
+        "the public access specifier",
+        "the private access specifier",
+        "the protect member function",
+        "the class protection operator, @",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 9,
+      "question": "When the body of a member function is defined inside a class declaration, it is said to be",
+      "options": [
+        "static",
+        "global",
+        "inline",
+        "conditional",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 10,
+      "question": "A __________ is a member function that is automatically called when a class object is __________.",
+      "options": [
+        "constructor, created",
+        "destructor, created",
+        "static function, deallocated",
+        "utility function, declared",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 11,
+      "question": "The constructor function's return type is",
+      "options": [
+        "int",
+        "float",
+        "char",
+        "structure pointer",
+        "None of these"
+      ],
+      "answer_index": 4
+    },
+    {
+      "id": 12,
+      "question": "The destructor function's return type is",
+      "options": [
+        "int",
+        "float",
+        "char",
+        "Nothing; destructors have no return type",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 13,
+      "question": "When a constructor function accepts no arguments, or does not have to accept arguments because of default arguments, it is called a(n)",
+      "options": [
+        "empty constructor",
+        "default constructor",
+        "stand-alone function",
+        "arbitrator function",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 14,
+      "question": "When a constructor has a member initialization list, the initializations take place",
+      "options": [
+        "after any statements in the body of the constructor execute",
+        "before any statements in the body of the constructor execute",
+        "when a member is used in the execution of the program",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 15,
+      "question": "In C++11 you can use __________ to initialize a member variable in its declaration statement.",
+      "options": [
+        "general member initialization",
+        "default initialization",
+        "in-place initialization",
+        "initialization overload",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 16,
+      "question": "The type of member function that may be called from a statement outside the class is",
+      "options": [
+        "public",
+        "private",
+        "undeclared",
+        "global",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 17,
+      "question": "If you do not declare an access specification, the default for members of a class is",
+      "options": [
+        "inline",
+        "private",
+        "public",
+        "global",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 18,
+      "question": "Members of the class object are accessed with the",
+      "options": [
+        "dot operator",
+        "cin object",
+        "extraction operator",
+        "stream insertion operator",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 19,
+      "question": "Assuming that Rectangle is a class name, what can you say is true, given the following statement?\nRectangle *BoxPtr;",
+      "options": [
+        "The statement declares an object of the class Rectangle.",
+        "The statement assigns the value of *BoxPtr to the object Rectangle.",
+        "The statement defines a Rectangle pointer variable named *BoxPtr.",
+        "The statement is illegal in C++.",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 20,
+      "question": "When you dereference an object pointer, use the",
+      "options": [
+        "-> operator",
+        "<> operator",
+        "dot operator",
+        "& operator",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 21,
+      "question": "Which type of member function may only be called from a function that is a member of the same class?",
+      "options": [
+        "public",
+        "private",
+        "global",
+        "local",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 22,
+      "question": "The constructor function always has the same name as",
+      "options": [
+        "the first private data member",
+        "the first public data member",
+        "the class",
+        "the first object of the class",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 23,
+      "question": "Which of the following is automatically called when an object is destroyed?",
+      "options": [
+        "the constructor function",
+        "the specification deallocator",
+        "the destructor function",
+        "the destruction function",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 24,
+      "question": "How many default constructors can a class have?",
+      "options": [
+        "only one",
+        "two or more",
+        "only two",
+        "any number",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 25,
+      "question": "Objects in an array are accessed with __________.",
+      "options": [
+        "subscripts",
+        "parentheses",
+        "#include statements",
+        "output format manipulators",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 26,
+      "question": "The process of object-oriented analysis can be viewed as the following steps:",
+      "options": [
+        "identify objects, then define each object's attributes, behaviors, and relationships",
+        "define data members and member functions, then assign the class name",
+        "declare public and private variables, prototype functions, and then write code",
+        "write the main() function, then determine which classes are needed",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 27,
+      "question": "When a member function is defined outside of the class declaration, the function name must be qualified with the",
+      "options": [
+        "class name, followed by a semicolon",
+        "name of the first object",
+        "class name, followed by the scope resolution operator",
+        "private access specifier",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 28,
+      "question": "If a local variable and a global variable have the same name within the same program, the __________ resolution operator must be used.",
+      "options": [
+        "variable",
+        "ambiguity",
+        "scope",
+        "global",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 29,
+      "question": "For the following code, which statement is true:\nclass Point\n{\n   private:\n      double y;\n      double z;\n   public:\n      double x;\n};",
+      "options": [
+        "x is available to code that is written outside the class.",
+        "The name of the class is Point.",
+        "x, y, and z are called members of the class.",
+        "z is not available to code that is written outside the class.",
+        "All of these are true."
+      ],
+      "answer_index": 4
+    },
+    {
+      "id": 30,
+      "question": "The following code shows an example of __________\nclass Point\n{\n   private:\n      double y = 5.70;\n      double z = 3.0;\n   public:\n      Public member functions go here...\n};",
+      "options": [
+        "constructor delegation",
+        "in-place initialization",
+        "a default constructor creation",
+        "an illegal initialization"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 31,
+      "question": "In C++11 you can have one constructor call another constructor in the same class by using",
+      "options": [
+        "constructor delegation",
+        "in-place initialization",
+        "a member initialization list",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 32,
+      "question": "Assume that myCar is an instance of the Car class and that the Car class has a member function named accelerate. Which of the following is a valid call to the accelerate member function?",
+      "options": [
+        "Car -> accelerate();",
+        "myCar::accelerate();",
+        "myCar.accelerate();",
+        "myCar:accelerate();",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 33,
+      "question": "What is the output of the following program:\n#include <iostream>\nusing namespace std;\nclass TestClass\n{\npublic:\n     TestClass(int x)\n     { cout << x << endl; }\n     TestClass()\n     { cout << \"Hello!\" << endl; }\n};\nint main()\n{\n     TestClass test;\n     return 0;\n}",
+      "options": [
+        "the program runs but there is no output.",
+        "0",
+        "Hello!",
+        "the program will not compile"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 34,
+      "question": "What is the output of the following program:\n#include <iostream>\nusing namespace std;\nclass TestClass\n{\npublic:\n     TestClass(int x)\n     { cout << x << endl; }\n     TestClass()\n     { cout << \"Hello!\" << endl; }\n};\nint main()\n{\n     TestClass test(77);\n     return 0;\n}",
+      "options": [
+        "the program runs but there is no output.",
+        "77",
+        "Hello!",
+        "the program will not compile"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 35,
+      "question": "What is the output of the following program:\n#include <iostream>\nusing namespace std;\nclass TestClass\n{\nprivate:\n     int val;\n     void showVal()\n     { cout << val << endl; }\npublic:\n     TestClass(int x)\n     { val = x; }\n};\nint main()\n{\n     TestClass test(77);\n     test.showVal();\n     return 0;\n}",
+      "options": [
+        "the program runs but there is no output.",
+        "77",
+        "0",
+        "the program will not compile"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 36,
+      "question": "Each object of a class has its own copy of the class's",
+      "options": [
+        "member functions",
+        "member variables",
+        "constructor and destructor functions",
+        "All of these",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 37,
+      "question": "The __________ member variable may be accessed before any objects of the class have been created.",
+      "options": [
+        "private",
+        "public",
+        "inline",
+        "static",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 38,
+      "question": "C++ requires that a copy constructor's parameter be a(n)",
+      "options": [
+        "integer data type",
+        "floating-point data type",
+        "pointer variable",
+        "reference object",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 39,
+      "question": "C++ allows you to redefine the way __________ work when used with class objects.",
+      "options": [
+        "compiler errors",
+        "preprocessor directives",
+        "standard operators",
+        "undefined variables",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 40,
+      "question": "When objects contain pointers, it is a good idea to create an explicit __________ function.",
+      "options": [
+        "destructor",
+        "copy constructor",
+        "static constructor",
+        "inline constructor",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 41,
+      "question": "A good reason to overload an operator is to enable it to",
+      "options": [
+        "outperform its C language counterparts",
+        "work in its usual way, but with programmer-defined data types",
+        "operate on more operands than in its standard definition",
+        "operate on no operands",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 42,
+      "question": "Which of the following operators may be used to assign one object to another?",
+      "options": [
+        "=",
+        "==",
+        "<>",
+        "@",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 43,
+      "question": "When a class contains an instance of another class, it is known as",
+      "options": [
+        "object overloading",
+        "operator overloading",
+        "object composition",
+        "dynamic composition",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 44,
+      "question": "If you do not furnish a(n) __________, an automatic memberwise copy will be performed when one object is assigned to another object.",
+      "options": [
+        "overloaded constructor function",
+        "overloaded assignment operator",
+        "default constructor function",
+        "overloaded copy operator",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 45,
+      "question": "It is a good idea to make a copy constructor's parameters __________ by specifying the __________ key word in the parameter list.",
+      "options": [
+        "inline, inline",
+        "static, static",
+        "constant, const",
+        "global, global",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 46,
+      "question": "If a member is declared __________, all objects of that class have access to that variable.",
+      "options": [
+        "static",
+        "dynamic",
+        "inline",
+        "default",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 47,
+      "question": "A member function that is declared __________ may not access any non-static data members in the class.",
+      "options": [
+        "private",
+        "public",
+        "static",
+        "inline",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 48,
+      "question": "Which type of function is not a member of a class but has access to the private members of the class?",
+      "options": [
+        "static",
+        "constructor",
+        "destructor",
+        "friend",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 49,
+      "question": "A(n) __________ is a special function that is called whenever a new object is created and initialized with another object's data.",
+      "options": [
+        "static function",
+        "destructor",
+        "copy constructor",
+        "assignment function",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 50,
+      "question": "If you do not furnish a __________, a default one will be provided by the compiler.",
+      "options": [
+        "constructor",
+        "destructor",
+        "copy constructor",
+        "All of these",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 51,
+      "question": "When you redefine the way a standard operator works when it is used with class objects, you have __________ the operator.",
+      "options": [
+        "reassigned",
+        "reformatted",
+        "overloaded",
+        "referenced",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 52,
+      "question": "In C++11 values that persist beyond the statement that created them and have names that make them accessible to other statements in the program are called",
+      "options": [
+        "rvalues",
+        "lvalues",
+        "temporary values",
+        "semantics",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 53,
+      "question": "In C++11 reference variables that can refer only to temporary objects that would otherwise have no name are called __________ and are declared with a __________.",
+      "options": [
+        "rvalues, ampersand (&)",
+        "lvalues, ampersand (&)",
+        "lvalues, double ampersand (&&)",
+        "rvalues, double ampersand (&&)",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 54,
+      "question": "In OOP programming, __________ allows you to create new classes based on existing classes.",
+      "options": [
+        "polymorphism",
+        "inheritance",
+        "function overloading",
+        "the copy constructor",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 55,
+      "question": "When you derive a class from an existing class, you __________ add new data and functions.",
+      "options": [
+        "never",
+        "must",
+        "may",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 56,
+      "question": "The __________ members of a base class are never accessible to a derived class.",
+      "options": [
+        "private",
+        "public",
+        "protected",
+        "All of these",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 57,
+      "question": "The __________ constructor is called before the __________ constructor.",
+      "options": [
+        "base, derived",
+        "derived, base",
+        "public, private",
+        "private, public",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 58,
+      "question": "A __________ of a base class expects to be overridden in a derived class.",
+      "options": [
+        "constructor function",
+        "destructor function",
+        "static function",
+        "virtual function",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 59,
+      "question": "The term __________ means the ability to take many forms.",
+      "options": [
+        "inheritance",
+        "polymorphism",
+        "member function",
+        "encapsulation",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 60,
+      "question": "When the compiler binds a member function call with the version of the function that resides in the same class as the call itself, it is considered",
+      "options": [
+        "local binding",
+        "safe binding",
+        "static binding",
+        "dynamic binding",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 61,
+      "question": "The compiler performs __________ on virtual functions.",
+      "options": [
+        "local binding",
+        "additional error checking",
+        "static binding",
+        "dynamic binding",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 62,
+      "question": "Which is the base class in the following statement?\nclass Car : public Vehicle",
+      "options": [
+        "Car",
+        "Vehicle",
+        "public",
+        "class",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 63,
+      "question": "The following statement allows the __________ members of the Car class to access __________ members of the Vehicle class.\nclass Car : public Vehicle",
+      "options": [
+        "private, private",
+        "public, private",
+        "protected, private",
+        "all, protected",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 64,
+      "question": "Which is the derived class in the following statement?\nclass Car : protected Vehicle",
+      "options": [
+        "Car",
+        "Vehicle",
+        "protected",
+        "There is no way to tell.",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 65,
+      "question": "What is being protected in the following statement?\nclass Car : protected Vehicle",
+      "options": [
+        "derived class functions",
+        "base class members",
+        "derived class data",
+        "future inherited classes",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 66,
+      "question": "Arguments are passed to the base class by the __________ class __________ function.",
+      "options": [
+        "derived, constructor",
+        "derived, destructor",
+        "base, constructor",
+        "base, destructor",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 67,
+      "question": "Arguments are passed to the base class destructor by the __________ class __________ function.",
+      "options": [
+        "derived, constructor",
+        "derived, destructor",
+        "base, constructor",
+        "base, destructor",
+        "None of these"
+      ],
+      "answer_index": 4
+    },
+    {
+      "id": 68,
+      "question": "Protected members of a base class are like __________, but they may be accessed by derived classes.",
+      "options": [
+        "constructor functions",
+        "static members",
+        "private members",
+        "public members",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 69,
+      "question": "The __________ destructor is called before the __________ destructor.",
+      "options": [
+        "base, derived",
+        "derived, base",
+        "public, private",
+        "private, public",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 70,
+      "question": "Which of the following is commonly used to extend a class or to give it additional capabilities?",
+      "options": [
+        "inheritance",
+        "privacy",
+        "the constructor",
+        "the destructor",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 71,
+      "question": "When member functions behave differently depending on which object performed the call, this is an example of",
+      "options": [
+        "chaos theory",
+        "virtual insubordination",
+        "polymorphism",
+        "encapsulation",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 72,
+      "question": "A virtual function is a function that expects to be __________ in a derived class.",
+      "options": [
+        "ignored",
+        "called frequently",
+        "overridden",
+        "private",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 73,
+      "question": "Multiple inheritance is when a __________ class has __________ base classes.",
+      "options": [
+        "base, no",
+        "derived, two or more",
+        "derived, no",
+        "compound, more than two",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 74,
+      "question": "A virtual function is declared by placing the __________ key word in front of the return type in the base class's function declaration.",
+      "options": [
+        "virtual",
+        "private",
+        "public",
+        "protected",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 75,
+      "question": "Polymorphism is when __________ in a class hierarchy perform differently, depending on which object performs the call.",
+      "options": [
+        "base class constructors",
+        "derived class constructors",
+        "member functions",
+        "derived class destructors",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 76,
+      "question": "Functions that are dynamically bound by the compiler are __________ functions.",
+      "options": [
+        "constructor",
+        "destructor",
+        "static",
+        "virtual",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 77,
+      "question": "C++11 introduced the __________ key word to help prevent subtle errors when overriding virtual functions.",
+      "options": [
+        "const",
+        "final",
+        "override",
+        "virtual",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 78,
+      "question": "Which of the following is used to signal errors or unexpected results that happen as a program runs?",
+      "options": [
+        "virtual functions",
+        "destructors",
+        "exceptions",
+        "templates",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 79,
+      "question": "The __________ starts with the key word try and is followed by a block of code that executes any statement that might cause an exception to be thrown.",
+      "options": [
+        "try block",
+        "try/catch class",
+        "try function",
+        "catch function",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 80,
+      "question": "When an error occurs, an exception is",
+      "options": [
+        "created",
+        "thrown",
+        "passed",
+        "ignored",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 81,
+      "question": "An exception thrown from outside a try block will",
+      "options": [
+        "be caught outside the catch block",
+        "be caught inside the catch block",
+        "remain inside the throw block",
+        "cause the program to abort execution",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 82,
+      "question": "In the following code, which statement is the throw point?\ndouble divide(int numer, int denom)\n{\nif (denom == 0)\n   throw \"ERROR: Cannot divide by zero.\\n\";\nelse\n   return static_cast<double>(numer)/denom;\n}",
+      "options": [
+        "if (denom == 0)",
+        "throw \"ERROR: Cannot divide by zero.\\n\";",
+        "return static_cast<double>(numer)/denom;",
+        "There is no throw point because there is no try block.",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 83,
+      "question": "Given the following code, what will happen if the value of denom is 0?\ndouble divide(int numer, int denom)\n{\nif (denom == 0)\n   throw \"ERROR: Cannot divide by zero.\\n\";\nelse\n   return static_cast<double>(numer)/denom;\n}",
+      "options": [
+        "Nothing will happen because there is no catch block.",
+        "The program will display ERROR: Cannot divide by zero. and then move to the statement following the if/else block.",
+        "The program will display ERROR: Cannot divide by zero. and then halt.",
+        "There is no throw point because there is no try block.",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 84,
+      "question": "If an exception is thrown by a member function of a class object, the class __________ is called.",
+      "options": [
+        "constructor",
+        "destructor",
+        "catcher",
+        "handler",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 85,
+      "question": "In a function template, the programmer writes a general version of a function using __________ (like T), which are then replaced by specific __________ (like int, double, etc.) when the function is instantiated.",
+      "options": [
+        "data types, template parameters",
+        "template parameters, arguments",
+        "arguments, template parameters",
+        "template parameters, data types",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 86,
+      "question": "A(n) __________ is used in a function template to specify a generic data type.",
+      "options": [
+        "dummy variable",
+        "exception",
+        "catch block",
+        "type parameter",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 87,
+      "question": "The beginning of a function template is marked by a",
+      "options": [
+        "return type",
+        "parameter list",
+        "template prefix",
+        "semicolon",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 88,
+      "question": "What does the T represent in the following statement?\ntemplate < class T >",
+      "options": [
+        "the name of the function template",
+        "T stands for Template",
+        "a generic data type that is used in a function template",
+        "the int data type",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 89,
+      "question": "What does the word class indicate in the following statement?\ntemplate < class T >",
+      "options": [
+        "class is a key word that is used to precede the type parameter.",
+        "It indicates that a class is being derived from an existing class named T.",
+        "It indicates that a class named T is being derived from a class named template.",
+        "A class named T will automatically be created by the compiler.",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 90,
+      "question": "Class templates allow you to create one general version of a class without having to",
+      "options": [
+        "write any code",
+        "use member functions",
+        "use private members",
+        "duplicate code to handle multiple data types",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 91,
+      "question": "A(n) __________ is a value or an object that signals an error.",
+      "options": [
+        "destructor",
+        "template",
+        "throw",
+        "exception",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 92,
+      "question": "To handle an exception that has been thrown, a program must have a(n)",
+      "options": [
+        "throw function",
+        "try/catch construct",
+        "fatal error",
+        "unrecoverable error",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 93,
+      "question": "The try block is immediately followed by one or more",
+      "options": [
+        "errors",
+        "error messages",
+        "catch blocks",
+        "throw blocks",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 94,
+      "question": "Catch blocks serve as",
+      "options": [
+        "exception handlers",
+        "receivers",
+        "temporary variables",
+        "permanent storage for trapped errors",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 95,
+      "question": "A generic function that can work with any data type is a",
+      "options": [
+        "function argument",
+        "function parameter",
+        "function template",
+        "member function",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 96,
+      "question": "How much memory is reserved for a function template?",
+      "options": [
+        "four bytes",
+        "It depends on the size of the template.",
+        "two bytes",
+        "no memory"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 97,
+      "question": "A function template's prefix contains __________ enclosed in angle brackets.",
+      "options": [
+        "one or more generic data types",
+        "the function definition",
+        "constant values",
+        "the function's return type",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 98,
+      "question": "A function template prefix is placed before the function header while a class template prefix is placed",
+      "options": [
+        "following the public: access specification",
+        "following the private: access specification",
+        "before the class declaration",
+        "before the class constructor function header",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 99,
+      "question": "A(n) __________ is like a pointer. It is used to access the individual data elements in a container.",
+      "options": [
+        "element access operator",
+        "subscript indicator",
+        "global data finder",
+        "iterator",
+        "None of these"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 100,
+      "question": "The most important data structures in the STL are __________",
+      "options": [
+        "arrays and structures",
+        "lists and groups",
+        "containers and iterators",
+        "templates and prototypes",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 101,
+      "question": "A(n) __________ is a class that stores data and organizes it in some fashion.",
+      "options": [
+        "iterator",
+        "container",
+        "template",
+        "box",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 102,
+      "question": "A sequence container that is dynamic in size is a(n)",
+      "options": [
+        "array",
+        "map",
+        "vector",
+        "multimap",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 103,
+      "question": "Which of the following types of iterators is(are) not supported by the vector class?",
+      "options": [
+        "const_iterator",
+        "reverse_iterator",
+        "const_reverse_iterator",
+        "All of these are supported by the vector class",
+        "None of these are supported by the vector class"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 104,
+      "question": "A technique introduced by C++11 to improve runtime performance is known as",
+      "options": [
+        "insertion",
+        "emplacement",
+        "push",
+        "multimove",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 105,
+      "question": "Because a vector container uses a dynamically allocated array to hold its elements, it is common for the vector class to allocate",
+      "options": [
+        "less memory than it needs",
+        "more memory than it needs",
+        "a separate memory location for copies of new elements",
+        "None of these"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 106,
+      "question": "To use the map class, you must include",
+      "options": [
+        "#include<key>",
+        "#include<key_value>",
+        "#include<map>",
+        "#include<multimap>",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 107,
+      "question": "When an element is stored in a map, it is stored as an object of the __________ type.",
+      "options": [
+        "map",
+        "key",
+        "pair",
+        "key_value",
+        "None of these"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 108,
+      "question": "To retrieve a value from a map, you call the __________ member function and pass the __________ that is associated with the desired value.",
+      "options": [
+        "at(), key",
+        "at(), value",
+        "key(), key",
+        "pair(), key",
+        "None of these"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 109,
+      "question": "In concurrent programming, the two basic units of program execution are __________.",
+      "options": [
+        "processes and threads",
+        "synchronous programs and asynchronous programs",
+        "data units and code units",
+        "classes and objects"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 110,
+      "question": "__________ is considered as a program or application that has self-contained memory and resources.",
+      "options": [
+        "Thread",
+        "Process",
+        "Class",
+        "Instance"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 111,
+      "question": "__________ are entities within a process that share memory and resources.",
+      "options": [
+        "Process",
+        "Class",
+        "Thread",
+        "Instance"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 112,
+      "question": "Which of the following statements is false?",
+      "options": [
+        "A thread is the flow of execution, from beginning to end, of a task.",
+        "A program may consist of many tasks that can run concurrently.",
+        "Threads enable programs to execute across several processor cores.",
+        "Threading can make program more responsive, more interactive, and enhance performance."
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 113,
+      "question": "Targets in thread th(target) are callable objects that are typically __________.",
+      "options": [
+        "functions and member functions",
+        "tasks and events",
+        "stack and heap",
+        "data and code"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 114,
+      "question": "To pass arguments to threads by reference, use __________.",
+      "options": [
+        "ref(argument)",
+        "*argument",
+        "&argument",
+        "(ref)argument"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 115,
+      "question": "Use __________ to get the identifier of the current thread.",
+      "options": [
+        "cur_thread.getId()",
+        "this_thread::get_id()",
+        "mainThread.getId()",
+        "thread::getId()"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 116,
+      "question": "Use __________ to suspend execution of the current thread for a given number of seconds.",
+      "options": [
+        "suspend(chrono::milliseconds(ms))",
+        "sleep(chrono::milliseconds(ms))",
+        "block(chrono::milliseconds(ms))",
+        "sleep_for(chrono::milliseconds(ms))"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 117,
+      "question": "Once a thread object is created, it begins execution __________.",
+      "options": [
+        "by calling the thread's start() function.",
+        "by calling the thread's boot() function.",
+        "by calling the thread's resume() function.",
+        "None of the above"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 118,
+      "question": "Call a thread’s __________ method to block the calling thread until the thread is terminated.",
+      "options": [
+        "join()",
+        "wait()",
+        "block()",
+        "sleep()"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 119,
+      "question": "Which of the following is about \"race condition\"?",
+      "options": [
+        "Two or more threads compete for a condition (for example a timer) to complete their tasks earlier.",
+        "A shared resource is accessed simultaneously by multiple threads.",
+        "The control with which the order of threads being scheduled is determined.",
+        "An approach when the Operating System decides which thread to be suspended and which to be executed."
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 120,
+      "question": "Code is said to be __________ if it does not cause a race condition in the presence of multiple threads.",
+      "options": [
+        "thread-safe",
+        "a harmony blockchain",
+        "a robust block",
+        "safe condition"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 121,
+      "question": "A mutex lock is in one of two states: __________.",
+      "options": [
+        "\"wait\" or \"notify\"",
+        "\"suspended\" or \"active\"",
+        "\"locked\" or \"unlocked\"",
+        "\"wait\" or \"active\""
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 122,
+      "question": "A __________ is used to protect shared data from being simultaneously accessed by multiple threads.",
+      "options": [
+        "mutex lock",
+        "condition variable",
+        "future",
+        "None of the above"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 123,
+      "question": "When a thread __________ a lock, it enters the locked state and subsequent attempts will be blocked until the lock is __________.",
+      "options": [
+        "holds, unlocked",
+        "acquires, released",
+        "blocks, unblocked",
+        "submits, retracted"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 124,
+      "question": "To create a lock, code __________.",
+      "options": [
+        "mutex lock;",
+        "lock = threading.Lock()",
+        "thread::lock Lock()",
+        "lock = new Lock()"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 125,
+      "question": "__________ is a mutex wrapper based on RAII, for owning a mutex only in a scoped block.",
+      "options": [
+        "mutex",
+        "thread_lock",
+        "lock_guard",
+        "raii_lock"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 126,
+      "question": "__________ means that two or more threads are blocked forever, waiting for each other.",
+      "options": [
+        "Deadlock",
+        "Starvation",
+        "Livelock",
+        "Liveness"
+      ],
+      "answer_index": 0
+    }
+  ]
+}
