@@ -1,0 +1,204 @@
+{
+  "title": "Concurrent Programming & C++ Threading Quiz",
+  "description": "A quiz covering basic units of execution, processes vs threads, thread management, mutexes, and race conditions.",
+  "quiz": [
+    {
+      "id": 1,
+      "question": "In concurrent programming, the two basic units of program execution are __________.",
+      "options": [
+        "processes and threads",
+        "synchronous programs and asynchronous programs",
+        "data units and code units",
+        "classes and objects"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 2,
+      "question": "__________ is considered as a program or application that has self-contained memory and resources.",
+      "options": [
+        "Thread",
+        "Process",
+        "Class",
+        "Instance"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 3,
+      "question": "__________ are entities within a process that share memory and resources.",
+      "options": [
+        "Process",
+        "Class",
+        "Thread",
+        "Instance"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 4,
+      "question": "Which of the following statements is false?",
+      "options": [
+        "A thread is the flow of execution, from beginning to end, of a task.",
+        "A program may consist of many tasks that can run concurrently.",
+        "Threads enable programs to execute across several processor cores.",
+        "Threading can make program more responsive, more interactive, and enhance performance."
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 5,
+      "question": "Targets in thread th(target) are callable objects that are typically __________.",
+      "options": [
+        "functions and member functions",
+        "tasks and events",
+        "stack and heap",
+        "data and code"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 6,
+      "question": "To pass arguments to threads by reference, use __________.",
+      "options": [
+        "ref(argument)",
+        "*argument",
+        "&argument",
+        "(ref)argument"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 7,
+      "question": "Use __________ to get the identifier of the current thread.",
+      "options": [
+        "cur_thread.getId()",
+        "this_thread::get_id()",
+        "mainThread.getId()",
+        "thread::getId()"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 8,
+      "question": "Use __________ to suspend execution of the current thread for a given number of seconds.",
+      "options": [
+        "suspend(chrono::milliseconds(ms))",
+        "sleep(chrono::milliseconds(ms))",
+        "block(chrono::milliseconds(ms))",
+        "sleep_for(chrono::milliseconds(ms))"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 9,
+      "question": "Once a thread object is created, it begins execution __________.",
+      "options": [
+        "by calling the thread's start() function.",
+        "by calling the thread's boot() function.",
+        "by calling the thread's resume() function.",
+        "None of the above"
+      ],
+      "answer_index": 3
+    },
+    {
+      "id": 10,
+      "question": "Call a thread’s __________ method to block the calling thread until the thread is terminated.",
+      "options": [
+        "join()",
+        "wait()",
+        "block()",
+        "sleep()"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is about \"race condition\"?",
+      "options": [
+        "Two or more threads compete for a condition (for example a timer) to complete their tasks earlier.",
+        "A shared resource is accessed simultaneously by multiple threads.",
+        "The control with which the order of threads being scheduled is determined.",
+        "An approach when the Operating System decides which thread to be suspended and which to be executed."
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 12,
+      "question": "Code is said to be __________ if it does not cause a race condition in the presence of multiple threads.",
+      "options": [
+        "thread-safe",
+        "a harmony blockchain",
+        "a robust block",
+        "safe condition"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 13,
+      "question": "A mutex lock is in one of two states: __________.",
+      "options": [
+        "\"wait\" or \"notify\"",
+        "\"suspended\" or \"active\"",
+        "\"locked\" or \"unlocked\"",
+        "\"wait\" or \"active\""
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 14,
+      "question": "A __________ is used to protect shared data from being simultaneously accessed by multiple threads.",
+      "options": [
+        "mutex lock",
+        "condition variable",
+        "future",
+        "None of the above"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 15,
+      "question": "When a thread __________ a lock, it enters the locked state and subsequent attempts will be blocked until the lock is __________.",
+      "options": [
+        "holds, unlocked",
+        "acquires, released",
+        "blocks, unblocked",
+        "submits, retracted"
+      ],
+      "answer_index": 1
+    },
+    {
+      "id": 16,
+      "question": "To create a lock, code __________.",
+      "options": [
+        "mutex lock;",
+        "lock = threading.Lock()",
+        "thread::lock Lock()",
+        "lock = new Lock()"
+      ],
+      "answer_index": 0
+    },
+    {
+      "id": 17,
+      "question": "__________ is a mutex wrapper based on RAII, for owning a mutex only in a scoped block.",
+      "options": [
+        "mutex",
+        "thread_lock",
+        "lock_guard",
+        "raii_lock"
+      ],
+      "answer_index": 2
+    },
+    {
+      "id": 18,
+      "question": "__________ means that two or more threads are blocked forever, waiting for each other.",
+      "options": [
+        "Deadlock",
+        "Starvation",
+        "Livelock",
+        "Liveness"
+      ],
+      "answer_index": 0
+    }
+  ]
+}
